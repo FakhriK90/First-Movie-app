@@ -18,7 +18,7 @@ function MovieCard({film}) {
     </Card.Text>
   </Card.Body>
     <div>
-    <Rating rating={rating} />
+    <Rating rate={rating} />
     </div>
 </Card>
         </div>

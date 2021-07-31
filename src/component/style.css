@@ -8,9 +8,21 @@
 
 .safa{
     display: flex;
-    margin: 20px 30px;
+    margin: 10px 30px;
     padding-bottom: 15px;
     padding-top: 20px;
     height:500px;
     
+}
+
+.bar{
+  font-size: 30px;
+  font-family: fantasy;
+  text-decoration: wavy;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px rgb(167, 1, 233);
+}
+
+.mr-auto{
+  text-shadow: 2px 2px 4px rgb(33, 248, 255);
 }
