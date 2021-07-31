@@ -1,0 +1,16 @@
+.mine{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    
+  }
+
+.safa{
+    display: flex;
+    margin: 20px 30px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    height:500px;
+    
+}
