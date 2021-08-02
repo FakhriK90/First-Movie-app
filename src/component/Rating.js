@@ -1,79 +1,43 @@
 import React from 'react'
 
-const Rating = ({rate}) => {
-   let {rating, color} = rate
+const Rating = ({rate,color}) => {
+
     return (
-        <div>
+        <div className="stars">
             <span>
                <i
           style={{ color }}
-          className={rating >= 1 ? 'fas fa-star' : 'far fa-star'}
+          className={rate >= 1 ? 'fas fa-star' : 'far fa-star'}
                ></i>
             </span>
 
             <span>
                <i
           style={{ color }}
-          className={rating >= 2 ? 'fas fa-star' : 'far fa-star'}
+          className={rate >= 2 ? 'fas fa-star' : 'far fa-star'}
                ></i>
             </span>
 
             <span>
                <i
           style={{ color }}
-          className={rating >= 3 ? 'fas fa-star' : 'far fa-star'}
+          className={rate >= 3 ? 'fas fa-star' : 'far fa-star'}
                ></i>
             </span>
 
             <span>
                <i
           style={{ color }}
-          className={rating >= 4 ? 'fas fa-star' : 'far fa-star'}
+          className={rate >= 4 ? 'fas fa-star' : 'far fa-star'}
                ></i>
             </span>
 
             <span>
                <i
           style={{ color }}
-          className={rating >= 5 ? 'fas fa-star' : 'far fa-star'}
+          className={rate >= 5 ? 'fas fa-star' : 'far fa-star'}
                ></i>
             </span>
-
-            <span>
-               <i
-          style={{ color }}
-          className={rating >= 6 ? 'fas fa-star' : 'far fa-star'}
-               ></i>
-            </span>
-
-            <span>
-               <i
-          style={{ color }}
-          className={rating >= 7 ? 'fas fa-star' : 'far fa-star'}
-               ></i>
-            </span>
-
-            <span>
-               <i
-          style={{ color }}
-          className={rating >= 8 ? 'fas fa-star' : 'far fa-star'}
-               ></i>
-            </span>
-
-            <span>
-               <i
-          style={{ color }}
-          className={rating >= 9 ? 'fas fa-star' : 'far fa-star'}
-               ></i>
-            </span>
-
-            <span>
-               <i
-          style={{ color }}
-          className={rating >= 10 ? 'fas fa-star' : 'far fa-star'}
-               ></i>
-            </span>
-
         </div>
     )
 }
