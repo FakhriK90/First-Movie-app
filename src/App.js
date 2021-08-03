@@ -1,11 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
+import { Button, Form, FormControl } from 'react-bootstrap';
 import './App.css';
 
 import MovieList from './component/MovieList';
 import NavBar from './component/NavBar';
 import SearchByRating from './component/SearchByRating';
-import SearchByTitle from './component/SearchByTitle';
+// import SearchByTitle from './component/SearchByTitle';
 import {films }from './Data';
 
 function App() {
@@ -16,18 +17,23 @@ function App() {
   const [rateSearch, setRateSearch] = useState(0);
   const [movies, setMovies] = useState(films);
 
-  const hundleTitle = (e) => setTitleSearch(e.target.value);
+  // const hundleTitle = (e) => setTitleSearch(e.target.value);
 
   return (
     <div className="App">
       <header>
-        <NavBar
+        <NavBar 
         setMovies={setMovies}
         movies={movies} />
       </header>
       <main>
+      <h1>Search</h1>
+      <div>
+      <div>
       <SearchByRating setRateSearch={setRateSearch} rateSearch={rateSearch} />
-      {/* <Form inline
+      </div>      
+      <div className="search">
+      <Form inline
       >
       <FormControl 
       type="text" 
@@ -35,14 +41,19 @@ function App() {
       className="mr-sm-2" 
       onChange={(e) => setTitleSearch(e.target.value)} />
       <Button pill variant="dark">Search</Button>
-      </Form> */}
-      <SearchByTitle hundleTitle={hundleTitle} setSearch={titleSearch} />
+      </Form>
+      </div>
+      </div>
+      {/* <SearchByTitle hundleTitle={hundleTitle} setSearch={titleSearch} /> */}      
+      <h1>Movies</h1>
+      <div>
       <MovieList 
       films={movies}
       titleSearch={titleSearch}
       rateSearch={rateSearch} />
-      <div class="animation-area">
-		  <ul class="box-area">
+      </div>
+      {/* <div className="animation-area">
+		  <ul className="box-area">
 			  <li></li>
 			  <li></li>
 			  <li></li>
@@ -50,7 +61,7 @@ function App() {
 			  <li></li>
 			  <li></li>
 		  </ul>
-	    </div>
+	    </div> */}
       </main>
     </div>
   );

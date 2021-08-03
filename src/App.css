@@ -3,8 +3,28 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  h1{
+    padding: 20px 0px 0px 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(39, 38, 38);
+	text-shadow: 2px 2px 5px rgb(66, 19, 85);
+}
+
+
+/* body{
+	background: linear-gradient(to left top, #8942a8 30%, #ba382f);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   */
+
+
+
+
   
-.banner-text {
+/* .banner-text {
 	width: 100%;
 	position: absolute;
 	z-index: 1;
@@ -98,4 +118,4 @@
 		transform: translateY(-800px) rotate(360deg);
 		opacity: 0;
 	}
-}  
+}   */
