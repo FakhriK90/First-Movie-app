@@ -24,7 +24,7 @@ const NavBar = ({setMovies, movies }) => {
     </Nav>    
     <div>
     
-    <AddMovie setMovies={setMovies} movies={movies} />
+    <AddMovie setMovies={setMovies} films={movies} />
     </div>
     {/* <SearchByTitle hundleTitle={hundleTitle} setSearch={titleSearch} />
     <SearchByRating setRateSearch={setRateSearch} rateSearch={rateSearch} /> */}

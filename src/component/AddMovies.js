@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import { Button, Modal, Form, FormControl, InputGroup } from 'react-bootstrap'
 
-const AddMovie = ({ setMovies, movies }) => {
+const AddMovie = ({ setMovies, films }) => {
   const [title, setTitle] = useState('')
   const [rating, setRating] = useState('')
-  const [posterUrl, setPosterUrl] = useState('')
+  const [posterURL, setPosterUrl] = useState('')
   const [description, setDescrip] = useState('')
 
   const handleAdd = () => {
     let newMovie = {
       title,
       rating: Number(rating),
-      posterUrl,
+      posterURL,
       description,
     }
-    setMovies([...movies, newMovie])
+    setMovies([...films, newMovie])
     handleClose()
   }
 
