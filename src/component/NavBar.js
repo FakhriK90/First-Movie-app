@@ -7,16 +7,17 @@ const NavBar = ({ setMovies, movies }) => {
   return (
     <div className="navig">
       <Navbar sticky="top" bg="light" variant="light">
+        <Link to="/" style={{textDecoration:"none"}}>
         <Navbar.Brand href="#home" inline className="logo">
           <img src={pic} alt="" widht="50" height="50" />
           Stream-Movies
-        </Navbar.Brand>
+        </Navbar.Brand></Link>
         <Nav className="mr-auto">
           <Nav.Link>
-            <Link to="/">Home</Link>
+            <Link to="/" style={{textDecoration:"none"}}>Home</Link>
           </Nav.Link>
           <Nav.Link>
-            <Link to="/moviepage">Movie</Link>
+            <Link to="/moviepage" style={{textDecoration:"none"}}>Movie</Link>
           </Nav.Link>
           <Nav.Link href="#search">Search</Nav.Link>
         </Nav>

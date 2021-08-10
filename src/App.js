@@ -32,7 +32,7 @@ function App() {
   
       <Route exact path="/" component={Home}/>
       <Route exact path="/moviepage" component={MoviePage}/>
-      <Route path = {`/:Movie`} render={(props) => <TrailerDesc movies={movies}
+      <Route exact path = {`/:Movie`} render={(props) => <TrailerDesc movies={movies}
     {...props} />}
      />
       </Switch>

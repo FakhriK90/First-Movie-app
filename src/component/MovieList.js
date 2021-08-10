@@ -25,8 +25,8 @@ function MovieList({films, titleSearch, rateSearch }) {
             {filter().map((e, i) => {
         return (
           
-          <Link to={`/${e.Movie}`}>
-          <div key={i}>
+          <Link to={`/${e.Movie}`} style={{textDecoration:"none"}}>
+          <div key={i.id}>
             <MovieCard film={e} />
           </div>
           </Link>
