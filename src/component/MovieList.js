@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import MovieCard from './MovieCard'
 
 function MovieList({films, titleSearch, rateSearch }) {
@@ -23,9 +24,12 @@ function MovieList({films, titleSearch, rateSearch }) {
         <div className="mine">
             {filter().map((e, i) => {
         return (
+          
+          <Link to={`/${e.Movie}`}>
           <div key={i}>
             <MovieCard film={e} />
           </div>
+          </Link>
         )
       })}
         </div>

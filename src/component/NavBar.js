@@ -12,9 +12,13 @@ const NavBar = ({ setMovies, movies }) => {
           Stream-Movies
         </Navbar.Brand>
         <Nav className="mr-auto">
-          <Link to="/">Home</Link>
+          <Nav.Link>
+            <Link to="/">Home</Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to="/moviepage">Movie</Link>
+          </Nav.Link>
           <Nav.Link href="#search">Search</Nav.Link>
-          <Link to="/moviepage">Movies</Link>
         </Nav>
         <div>
           <AddMovie setMovies={setMovies} films={movies} />

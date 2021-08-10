@@ -1,0 +1,12 @@
+.home{
+    background: url("./trailer.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.text{
+    text-align: center;
+    padding-top: 250px;
+}
