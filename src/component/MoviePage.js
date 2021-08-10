@@ -3,6 +3,7 @@ import { Button, Form, FormControl } from 'react-bootstrap'
 import MovieList from './MovieList'
 import SearchByRating from './SearchByRating'
 import {films }from './Data';
+import './style.css';
 
 const MoviePage = () => {
     const [titleSearch, setTitleSearch] = useState('');
@@ -10,7 +11,7 @@ const MoviePage = () => {
   const [movies, setMovies] = useState(films);
   
     return (
-        <div>
+        <div className="page">
             <h1>Search</h1>
       <div>
       <div>

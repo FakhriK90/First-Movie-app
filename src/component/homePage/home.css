@@ -1,12 +1,37 @@
 .home{
-    background: url("./trailer.jpg") ;
+    background: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_640.png") ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+    font-size: 18px;
+    font-family: "Yellowtail", sans-serif;
 }
 
 .text{
     text-align: center;
     padding-top: 250px;
+    font-size: 100px;    
+    animation: flicker 1.5s infinite alternate;
+  color: #fff;  
 }
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #5271ff,
+        0 0 82px #5271ff,
+        0 0 92px #5271ff,
+        0 0 102px #5271ff,
+        0 0 151px #5271ff;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }

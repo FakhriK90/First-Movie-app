@@ -18,8 +18,7 @@ const NavBar = ({ setMovies, movies }) => {
           </Nav.Link>
           <Nav.Link>
             <Link to="/moviepage" style={{textDecoration:"none"}}>Movie</Link>
-          </Nav.Link>
-          <Nav.Link href="#search">Search</Nav.Link>
+          </Nav.Link>          
         </Nav>
         <div>
           <AddMovie setMovies={setMovies} films={movies} />
