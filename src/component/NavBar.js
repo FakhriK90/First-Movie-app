@@ -16,7 +16,7 @@ const NavBar = ({ setMovies, movies }) => {
           <Nav.Link>
             <Link to="/" style={{textDecoration:"none"}}>Home</Link>
           </Nav.Link>
-          <Nav.Link>
+          <Nav.Link style = {{marginLeft:5}}>
             <Link to="/moviepage" style={{textDecoration:"none"}}>Movie</Link>
           </Nav.Link>          
         </Nav>

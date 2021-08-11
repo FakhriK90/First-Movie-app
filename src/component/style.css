@@ -1,3 +1,5 @@
+
+
 .page{
 	background: url(https://images.unsplash.com/photo-1619099619226-f96e319e3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1534&q=80);
     background-position: center;
@@ -37,7 +39,8 @@
 }
 
 .mr-auto{
-  text-shadow: 2px 2px 4px rgb(33, 248, 255);
+  text-shadow: 3px 3px 4px rgb(33, 248, 255);
+  margin-left: 5px;
 }
 
 .logo img{
@@ -47,7 +50,17 @@
   font-family: fantasy;
 }
 
+.stars {
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+    margin-bottom: 10px;
+  }
 
+
+.stars span{
+	margin-left: 5px;
+}  
 
 .rStar {
   margin: 80px auto 20px;
@@ -144,3 +157,45 @@
 		opacity: 0;
 	}
 }  
+
+.traidesc{
+	background-image: url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contai{
+	display: flex;
+	padding-top: 77px;
+	padding-bottom: 70px;
+}
+
+.vid{
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+	margin-bottom: 20px;
+	margin-left: 5px;
+}
+
+.description{
+	margin: 10px 200px;
+	padding-top: 20px;
+	color: rgb(199, 181, 181);
+}
+
+button {
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.986);
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+	padding: 2px;
+	margin-bottom: 20px;
+	margin-left: 5px;
+}
+button:hover
+ {
+     box-shadow: 0px 0px 15px white;
+ }
